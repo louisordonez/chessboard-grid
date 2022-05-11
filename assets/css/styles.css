@@ -56,10 +56,10 @@ body {
 .chessboard {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: auto auto auto auto auto auto auto auto;
-      grid-template-columns: auto auto auto auto auto auto auto auto;
-  -ms-grid-rows: auto auto auto auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto auto auto auto;
+  -ms-grid-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+      grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+  -ms-grid-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+      grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
   background-color: white;
   border: 1px solid black;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -67,8 +67,8 @@ body {
 }
 
 .box {
-  width: 60px;
-  height: 60px;
+  width: auto;
+  height: auto;
   border: 1px solid black;
 }
 
@@ -233,195 +233,53 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
-  .box {
-    width: 47px;
-    height: 47px;
-  }
-  .chess-piece {
-    font-size: 35px;
-  }
-  .move-white-pawn-1 {
-    position: relative;
-    -webkit-animation: moveWhitePawn1_450 1s forwards;
-            animation: moveWhitePawn1_450 1s forwards;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  .move-white-pawn-2 {
-    position: relative;
-    -webkit-animation: moveWhitePawn2_450 1s forwards;
-            animation: moveWhitePawn2_450 1s forwards;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-  }
-  .move-black-pawn-1 {
-    position: relative;
-    -webkit-animation: moveBlackPawn1_450 1s forwards;
-            animation: moveBlackPawn1_450 1s forwards;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-  }
-  .move-black-queen {
-    position: relative;
-    -webkit-animation: moveBlackQueen_450 1s forwards;
-            animation: moveBlackQueen_450 1s forwards;
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
-  }
-  .box-red {
-    -webkit-animation: boxRed_450 1s forwards;
-            animation: boxRed_450 1s forwards;
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
-  }
-}
-
-@-webkit-keyframes moveWhitePawn1_450 {
-  from {
-    bottom: 0px;
-  }
-  to {
-    bottom: 47px;
-  }
-}
-
-@keyframes moveWhitePawn1_450 {
-  from {
-    bottom: 0px;
-  }
-  to {
-    bottom: 47px;
-  }
-}
-
-@-webkit-keyframes moveWhitePawn2_450 {
-  from {
-    bottom: 0px;
-  }
-  to {
-    bottom: 94px;
-  }
-}
-
-@keyframes moveWhitePawn2_450 {
-  from {
-    bottom: 0px;
-  }
-  to {
-    bottom: 94px;
-  }
-}
-
-@-webkit-keyframes moveBlackPawn1_450 {
-  from {
-    top: 0px;
-  }
-  to {
-    top: 96px;
-  }
-}
-
-@keyframes moveBlackPawn1_450 {
-  from {
-    top: 0px;
-  }
-  to {
-    top: 96px;
-  }
-}
-
-@-webkit-keyframes moveBlackQueen_450 {
-  from {
-    top: 0px;
-    left: 0px;
-  }
-  to {
-    top: 190px;
-    left: 190px;
-  }
-}
-
-@keyframes moveBlackQueen_450 {
-  from {
-    top: 0px;
-    left: 0px;
-  }
-  to {
-    top: 190px;
-    left: 190px;
-  }
-}
-
-@-webkit-keyframes boxRed_450 {
-  from {
-    top: 0px;
-    left: 0px;
-  }
-  to {
-    top: 0px;
-    left: 0x;
-    background: red;
-  }
-}
-
-@keyframes boxRed_450 {
-  from {
-    top: 0px;
-    left: 0px;
-  }
-  to {
-    top: 0px;
-    left: 0x;
-    background: red;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .box {
-    width: 43px;
-    height: 43px;
+@media screen and (max-width: 499px) {
+  .chessboard {
+    -ms-grid-rows: 43px 43px 43px 43px 43px 43px 43px 43px;
+        grid-template-rows: 43px 43px 43px 43px 43px 43px 43px 43px;
+    -ms-grid-columns: 43px 43px 43px 43px 43px 43px 43px 43px;
+        grid-template-columns: 43px 43px 43px 43px 43px 43px 43px 43px;
   }
   .chess-piece {
     font-size: 33px;
   }
   .move-white-pawn-1 {
     position: relative;
-    -webkit-animation: moveWhitePawn1_390 1s forwards;
-            animation: moveWhitePawn1_390 1s forwards;
+    -webkit-animation: moveWhitePawn1_499 1s forwards;
+            animation: moveWhitePawn1_499 1s forwards;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   .move-white-pawn-2 {
     position: relative;
-    -webkit-animation: moveWhitePawn2_390 1s forwards;
-            animation: moveWhitePawn2_390 1s forwards;
+    -webkit-animation: moveWhitePawn2_499 1s forwards;
+            animation: moveWhitePawn2_499 1s forwards;
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
   }
   .move-black-pawn-1 {
     position: relative;
-    -webkit-animation: moveBlackPawn1_390 1s forwards;
-            animation: moveBlackPawn1_390 1s forwards;
+    -webkit-animation: moveBlackPawn1_499 1s forwards;
+            animation: moveBlackPawn1_499 1s forwards;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
   }
   .move-black-queen {
     position: relative;
-    -webkit-animation: moveBlackQueen_390 1s forwards;
-            animation: moveBlackQueen_390 1s forwards;
+    -webkit-animation: moveBlackQueen_499 1s forwards;
+            animation: moveBlackQueen_499 1s forwards;
     -webkit-animation-delay: 4s;
             animation-delay: 4s;
   }
   .box-red {
-    -webkit-animation: boxRed_390 1s forwards;
-            animation: boxRed_390 1s forwards;
+    -webkit-animation: boxRed_499 1s forwards;
+            animation: boxRed_499 1s forwards;
     -webkit-animation-delay: 5s;
             animation-delay: 5s;
   }
 }
 
-@-webkit-keyframes moveWhitePawn1_390 {
+@-webkit-keyframes moveWhitePawn1_499 {
   from {
     bottom: 0px;
   }
@@ -430,7 +288,7 @@ body {
   }
 }
 
-@keyframes moveWhitePawn1_390 {
+@keyframes moveWhitePawn1_499 {
   from {
     bottom: 0px;
   }
@@ -439,7 +297,7 @@ body {
   }
 }
 
-@-webkit-keyframes moveWhitePawn2_390 {
+@-webkit-keyframes moveWhitePawn2_499 {
   from {
     bottom: 0px;
   }
@@ -448,7 +306,7 @@ body {
   }
 }
 
-@keyframes moveWhitePawn2_390 {
+@keyframes moveWhitePawn2_499 {
   from {
     bottom: 0px;
   }
@@ -457,7 +315,7 @@ body {
   }
 }
 
-@-webkit-keyframes moveBlackPawn1_390 {
+@-webkit-keyframes moveBlackPawn1_499 {
   from {
     top: 0px;
   }
@@ -466,7 +324,7 @@ body {
   }
 }
 
-@keyframes moveBlackPawn1_390 {
+@keyframes moveBlackPawn1_499 {
   from {
     top: 0px;
   }
@@ -475,7 +333,7 @@ body {
   }
 }
 
-@-webkit-keyframes moveBlackQueen_390 {
+@-webkit-keyframes moveBlackQueen_499 {
   from {
     top: 0px;
     left: 0px;
@@ -486,7 +344,7 @@ body {
   }
 }
 
-@keyframes moveBlackQueen_390 {
+@keyframes moveBlackQueen_499 {
   from {
     top: 0px;
     left: 0px;
@@ -497,7 +355,7 @@ body {
   }
 }
 
-@-webkit-keyframes boxRed_390 {
+@-webkit-keyframes boxRed_499 {
   from {
     top: 0px;
     left: 0px;
@@ -509,7 +367,7 @@ body {
   }
 }
 
-@keyframes boxRed_390 {
+@keyframes boxRed_499 {
   from {
     top: 0px;
     left: 0px;
@@ -521,54 +379,56 @@ body {
   }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 380px) {
   .header {
     font-size: 21px;
   }
-  .box {
-    width: 32px;
-    height: 32px;
+  .chessboard {
+    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px;
+        grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px;
+    -ms-grid-columns: 32px 32px 32px 32px 32px 32px 32px 32px;
+        grid-template-columns: 32px 32px 32px 32px 32px 32px 32px 32px;
   }
   .chess-piece {
     font-size: 25px;
   }
   .move-white-pawn-1 {
     position: relative;
-    -webkit-animation: moveWhitePawn1_280 1s forwards;
-            animation: moveWhitePawn1_280 1s forwards;
+    -webkit-animation: moveWhitePawn1_380 1s forwards;
+            animation: moveWhitePawn1_380 1s forwards;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   .move-white-pawn-2 {
     position: relative;
-    -webkit-animation: moveWhitePawn2_280 1s forwards;
-            animation: moveWhitePawn2_280 1s forwards;
+    -webkit-animation: moveWhitePawn2_380 1s forwards;
+            animation: moveWhitePawn2_380 1s forwards;
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
   }
   .move-black-pawn-1 {
     position: relative;
-    -webkit-animation: moveBlackPawn1_280 1s forwards;
-            animation: moveBlackPawn1_280 1s forwards;
+    -webkit-animation: moveBlackPawn1_380 1s forwards;
+            animation: moveBlackPawn1_380 1s forwards;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
   }
   .move-black-queen {
     position: relative;
-    -webkit-animation: moveBlackQueen_280 1s forwards;
-            animation: moveBlackQueen_280 1s forwards;
+    -webkit-animation: moveBlackQueen_380 1s forwards;
+            animation: moveBlackQueen_380 1s forwards;
     -webkit-animation-delay: 4s;
             animation-delay: 4s;
   }
   .box-red {
-    -webkit-animation: boxRed_280 1s forwards;
-            animation: boxRed_280 1s forwards;
+    -webkit-animation: boxRed_380 1s forwards;
+            animation: boxRed_380 1s forwards;
     -webkit-animation-delay: 5s;
             animation-delay: 5s;
   }
 }
 
-@-webkit-keyframes moveWhitePawn1_280 {
+@-webkit-keyframes moveWhitePawn1_380 {
   from {
     bottom: 0px;
   }
@@ -577,7 +437,7 @@ body {
   }
 }
 
-@keyframes moveWhitePawn1_280 {
+@keyframes moveWhitePawn1_380 {
   from {
     bottom: 0px;
   }
@@ -586,7 +446,7 @@ body {
   }
 }
 
-@-webkit-keyframes moveWhitePawn2_280 {
+@-webkit-keyframes moveWhitePawn2_380 {
   from {
     bottom: 0px;
   }
@@ -595,7 +455,7 @@ body {
   }
 }
 
-@keyframes moveWhitePawn2_280 {
+@keyframes moveWhitePawn2_380 {
   from {
     bottom: 0px;
   }
@@ -604,7 +464,7 @@ body {
   }
 }
 
-@-webkit-keyframes moveBlackPawn1_280 {
+@-webkit-keyframes moveBlackPawn1_380 {
   from {
     top: 0px;
   }
@@ -613,7 +473,7 @@ body {
   }
 }
 
-@keyframes moveBlackPawn1_280 {
+@keyframes moveBlackPawn1_380 {
   from {
     top: 0px;
   }
@@ -622,7 +482,7 @@ body {
   }
 }
 
-@-webkit-keyframes moveBlackQueen_280 {
+@-webkit-keyframes moveBlackQueen_380 {
   from {
     top: 0px;
     left: 0px;
@@ -633,7 +493,7 @@ body {
   }
 }
 
-@keyframes moveBlackQueen_280 {
+@keyframes moveBlackQueen_380 {
   from {
     top: 0px;
     left: 0px;
@@ -644,7 +504,7 @@ body {
   }
 }
 
-@-webkit-keyframes boxRed_280 {
+@-webkit-keyframes boxRed_380 {
   from {
     top: 0px;
     left: 0px;
@@ -656,7 +516,7 @@ body {
   }
 }
 
-@keyframes boxRed_280 {
+@keyframes boxRed_380 {
   from {
     top: 0px;
     left: 0px;
