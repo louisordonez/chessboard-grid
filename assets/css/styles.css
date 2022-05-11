@@ -63,7 +63,7 @@ body {
   max-width: 480px;
   max-height: 480px;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: white;
   border: 1px solid black;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
