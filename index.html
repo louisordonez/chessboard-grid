@@ -4,7 +4,294 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Chessboard - Grid</title>
   </head>
-  <body></body>
+  <body>
+    <div class="refresh-btn">
+      <button class="button" onclick="window.location.reload();">
+        Refresh
+      </button>
+    </div>
+    <div class="container">
+      <div class="header-container">
+        <h1 class="header">Chessboard - Grid</h1>
+      </div>
+      <div class="chessboard">
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece">
+              <i class="fa-solid fa-chess-rook"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-knight"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-bishop"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece move-black-queen">
+              <i class="fa-solid fa-chess-queen"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-king"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-bishop"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-knight"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-rook"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-pawn"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-pawn"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-pawn"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-pawn"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece move-black-pawn-1">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-pawn"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece"><i class="fa-solid fa-chess-pawn"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg"></div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg box-red"></div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg box-red"></div>
+        </div>
+        <div class="box"><div class="box-color tufts-blue-bg"></div></div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-pawn white"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg box-red">
+            <p class="chess-piece white move-white-pawn-1">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white move-white-pawn-2">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-pawn"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-rook"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-knight"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-bishop"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-queen"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg box-red">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-king"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-bishop"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color medium-persian-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-knight"></i>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-color tufts-blue-bg">
+            <p class="chess-piece white">
+              <i class="fa-solid fa-chess-rook"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

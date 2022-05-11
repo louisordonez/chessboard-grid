@@ -1,0 +1,23 @@
+@mixin animation-position {
+  position: relative;
+}
+
+@mixin animation-delay-white-pawn-1 {
+  animation-delay: 1s;
+}
+
+@mixin animation-delay-white-pawn-2 {
+  animation-delay: 3s;
+}
+
+@mixin animation-delay-black-pawn-1 {
+  animation-delay: 2s;
+}
+
+@mixin animation-delay-black-queen {
+  animation-delay: 4s;
+}
+
+@mixin animation-delay-box-red {
+  animation-delay: 5s;
+}

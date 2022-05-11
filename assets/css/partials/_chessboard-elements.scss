@@ -1,0 +1,397 @@
+@import "./variables";
+@import "./mixins";
+
+.chessboard {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 480px;
+  max-height: 480px;
+  width: 100vw;
+  height: 100vw;
+  background-color: $white;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.box {
+  width: 12.5%;
+  height: 12.5%;
+  border: 1px solid black;
+}
+
+.box-color {
+  width: 100%;
+  height: 100%;
+}
+
+.chess-piece {
+  font-size: 45px;
+  text-align: center;
+}
+
+.medium-persian-blue-bg {
+  background-color: $medium-persian-blue;
+}
+
+.tufts-blue-bg {
+  background-color: $tufts-blue;
+}
+
+.white {
+  color: $white;
+}
+
+.move-white-pawn-1 {
+  @include animation-position;
+  animation: moveWhitePawn1 $animation forwards;
+  @include animation-delay-white-pawn-1;
+}
+
+.move-white-pawn-2 {
+  @include animation-position;
+  animation: moveWhitePawn2 $animation forwards;
+  @include animation-delay-white-pawn-2;
+}
+
+.move-black-pawn-1 {
+  @include animation-position;
+  animation: moveBlackPawn1 $animation forwards;
+  @include animation-delay-black-pawn-1;
+}
+
+.move-black-queen {
+  @include animation-position;
+  animation: moveBlackQueen $animation forwards;
+  @include animation-delay-black-queen;
+}
+
+.box-red {
+  animation: boxRed $animation forwards;
+  @include animation-delay-box-red;
+}
+
+@keyframes moveWhitePawn1 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 60px;
+  }
+}
+
+@keyframes moveWhitePawn2 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 120px;
+  }
+}
+
+@keyframes moveBlackPawn1 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 120px;
+  }
+}
+
+@keyframes moveBlackQueen {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 240px;
+    left: 240px;
+  }
+}
+
+@keyframes boxRed {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 0px;
+    left: 0x;
+    background: $red;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .chessboard {
+    max-width: 380px;
+    max-height: 380px;
+  }
+
+  .chess-piece {
+    font-size: 35px;
+  }
+
+  .move-white-pawn-1 {
+    @include animation-position;
+    animation: moveWhitePawn1_450 $animation forwards;
+    @include animation-delay-white-pawn-1;
+  }
+
+  .move-white-pawn-2 {
+    @include animation-position;
+    animation: moveWhitePawn2_450 $animation forwards;
+    @include animation-delay-white-pawn-2;
+  }
+
+  .move-black-pawn-1 {
+    @include animation-position;
+    animation: moveBlackPawn1_450 $animation forwards;
+    @include animation-delay-black-pawn-1;
+  }
+
+  .move-black-queen {
+    @include animation-position;
+    animation: moveBlackQueen_450 $animation forwards;
+    @include animation-delay-black-queen;
+  }
+
+  .box-red {
+    animation: boxRed_450 $animation forwards;
+    @include animation-delay-box-red;
+  }
+}
+
+@keyframes moveWhitePawn1_450 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 47px;
+  }
+}
+
+@keyframes moveWhitePawn2_450 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 94px;
+  }
+}
+
+@keyframes moveBlackPawn1_450 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 96px;
+  }
+}
+
+@keyframes moveBlackQueen_450 {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 190px;
+    left: 190px;
+  }
+}
+
+@keyframes boxRed_450 {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 0px;
+    left: 0x;
+    background: $red;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .chessboard {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .chess-piece {
+    font-size: 33px;
+  }
+
+  .move-white-pawn-1 {
+    @include animation-position;
+    animation: moveWhitePawn1_390 $animation forwards;
+    @include animation-delay-white-pawn-1;
+  }
+
+  .move-white-pawn-2 {
+    @include animation-position;
+    animation: moveWhitePawn2_390 $animation forwards;
+    @include animation-delay-white-pawn-2;
+  }
+
+  .move-black-pawn-1 {
+    @include animation-position;
+    animation: moveBlackPawn1_390 $animation forwards;
+    @include animation-delay-black-pawn-1;
+  }
+
+  .move-black-queen {
+    @include animation-position;
+    animation: moveBlackQueen_390 $animation forwards;
+    @include animation-delay-black-queen;
+  }
+
+  .box-red {
+    animation: boxRed_390 $animation forwards;
+    @include animation-delay-box-red;
+  }
+}
+
+@keyframes moveWhitePawn1_390 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 45px;
+  }
+}
+
+@keyframes moveWhitePawn2_390 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 88px;
+  }
+}
+
+@keyframes moveBlackPawn1_390 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 86px;
+  }
+}
+
+@keyframes moveBlackQueen_390 {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 173px;
+    left: 173px;
+  }
+}
+
+@keyframes boxRed_390 {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 0px;
+    left: 0x;
+    background: $red;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header {
+    font-size: 21px;
+  }
+
+  .chessboard {
+    max-width: 260px;
+    max-height: 260px;
+  }
+
+  .chess-piece {
+    font-size: 25px;
+  }
+
+  .move-white-pawn-1 {
+    @include animation-position;
+    animation: moveWhitePawn1_280 $animation forwards;
+    @include animation-delay-white-pawn-1;
+  }
+
+  .move-white-pawn-2 {
+    @include animation-position;
+    animation: moveWhitePawn2_280 $animation forwards;
+    @include animation-delay-white-pawn-2;
+  }
+
+  .move-black-pawn-1 {
+    @include animation-position;
+    animation: moveBlackPawn1_280 $animation forwards;
+    @include animation-delay-black-pawn-1;
+  }
+
+  .move-black-queen {
+    @include animation-position;
+    animation: moveBlackQueen_280 $animation forwards;
+    @include animation-delay-black-queen;
+  }
+
+  .box-red {
+    animation: boxRed_280 $animation forwards;
+    @include animation-delay-box-red;
+  }
+}
+
+@keyframes moveWhitePawn1_280 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 34px;
+  }
+}
+
+@keyframes moveWhitePawn2_280 {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 66px;
+  }
+}
+
+@keyframes moveBlackPawn1_280 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 63px;
+  }
+}
+
+@keyframes moveBlackQueen_280 {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 129px;
+    left: 129px;
+  }
+}
+
+@keyframes boxRed_280 {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 0px;
+    left: 0x;
+    background: $red;
+  }
+}
