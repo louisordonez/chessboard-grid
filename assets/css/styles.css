@@ -378,9 +378,9 @@ body {
 }
 
 @media screen and (max-width: 390px) {
-  .chessboard {
-    max-width: 350px;
-    max-height: 350px;
+  .box {
+    width: 43px;
+    height: 43px;
   }
   .chess-piece {
     font-size: 33px;
