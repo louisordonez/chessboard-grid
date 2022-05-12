@@ -10,4 +10,10 @@ $red: red;
 $quicksand: "Quicksand", sans-serif;
 
 // Animation
-$animation: 1s;
+$animation-duration: 1s;
+$animation-fill-mode: forwards;
+$white-pawn-1-animation-delay: 1s;
+$white-pawn-2-animation-delay: 3s;
+$black-pawn-1-animation-delay: 2s;
+$black-queen-animation-delay: 4s;
+$box-red-animation-delay: 5s;
