@@ -1,2 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap");
-@import "./partials/index";
+@import "./partials/reset";
+@import "./partials/body";
+@import "./partials/variables";
+@import "./partials/buttons";
+@import "./partials/container";
+@import "./partials/header";
+@import "./partials/chessboard-elements";
+@import "./partials/mixins";
