@@ -1,5 +1,8 @@
 # chessboard-grid
+This project is a web page application chessboard utilizing Grid.
 
-https://louisordonez.github.io/chessboard-grid/
+## Tech Stack
+- HTML
+- SCSS
 
-This project is a web page application chessboard built using HTML utilizing Grid and SCSS.
+#### Live Demo: https://louisordonez.github.io/chessboard-grid/
