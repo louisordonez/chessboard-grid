@@ -1,7 +1,9 @@
 # chessboard-grid
+
 This project is a web application chessboard utilizing Grid.
 
 ## Tech Stack
+
 - HTML
 - SCSS
 
