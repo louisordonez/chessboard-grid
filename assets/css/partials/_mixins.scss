@@ -1,15 +1,10 @@
-@import "./animations";
+@import './animations';
 
 @mixin animation-position {
   position: relative;
 }
 
-@mixin moveAnimation(
-  $animation-name,
-  $screen-size,
-  $animation-duration,
-  $animation-fill-mode
-) {
+@mixin moveAnimation($animation-name, $screen-size, $animation-duration, $animation-fill-mode) {
   @include animation-position;
   @if ($animation-name == move-white-pawn-1) {
     @if ($screen-size == default) {
@@ -46,12 +41,7 @@
   }
 }
 
-@mixin boxRedAnimation(
-  $animation-name,
-  $screen-size,
-  $animation-duration,
-  $animation-fill-mode
-) {
+@mixin boxRedAnimation($animation-name, $screen-size, $animation-duration, $animation-fill-mode) {
   @if ($animation-name == box-red) {
     @if ($screen-size == default) {
       animation: boxRed $animation-duration $animation-fill-mode;

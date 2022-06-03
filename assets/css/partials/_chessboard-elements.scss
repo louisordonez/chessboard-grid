@@ -1,5 +1,5 @@
-@import "./variables";
-@import "./mixins";
+@import './variables';
+@import './mixins';
 
 .chessboard {
   display: inline-grid;
@@ -7,8 +7,7 @@
   grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
   background-color: $white;
   border: 1px solid $black;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .box {
@@ -40,52 +39,27 @@
 }
 
 .move-white-pawn-1 {
-  @include moveAnimation(
-    move-white-pawn-1,
-    default,
-    $animation-duration,
-    $animation-fill-mode
-  );
+  @include moveAnimation(move-white-pawn-1, default, $animation-duration, $animation-fill-mode);
   @include animation-delay($white-pawn-1-animation-delay);
 }
 
 .move-white-pawn-2 {
-  @include moveAnimation(
-    move-white-pawn-2,
-    default,
-    $animation-duration,
-    $animation-fill-mode
-  );
+  @include moveAnimation(move-white-pawn-2, default, $animation-duration, $animation-fill-mode);
   @include animation-delay($white-pawn-2-animation-delay);
 }
 
 .move-black-pawn-1 {
-  @include moveAnimation(
-    move-black-pawn-1,
-    default,
-    $animation-duration,
-    $animation-fill-mode
-  );
+  @include moveAnimation(move-black-pawn-1, default, $animation-duration, $animation-fill-mode);
   @include animation-delay($black-pawn-1-animation-delay);
 }
 
 .move-black-queen {
-  @include moveAnimation(
-    move-black-queen,
-    default,
-    $animation-duration,
-    $animation-fill-mode
-  );
+  @include moveAnimation(move-black-queen, default, $animation-duration, $animation-fill-mode);
   @include animation-delay($black-queen-animation-delay);
 }
 
 .box-red {
-  @include boxRedAnimation(
-    box-red,
-    default,
-    $animation-duration,
-    $animation-fill-mode
-  );
+  @include boxRedAnimation(box-red, default, $animation-duration, $animation-fill-mode);
   @include animation-delay($box-red-animation-delay);
 }
 
@@ -100,52 +74,27 @@
   }
 
   .move-white-pawn-1 {
-    @include moveAnimation(
-      move-white-pawn-1,
-      499,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-white-pawn-1, 499, $animation-duration, $animation-fill-mode);
     @include animation-delay($white-pawn-1-animation-delay);
   }
 
   .move-white-pawn-2 {
-    @include moveAnimation(
-      move-white-pawn-2,
-      499,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-white-pawn-2, 499, $animation-duration, $animation-fill-mode);
     @include animation-delay($white-pawn-2-animation-delay);
   }
 
   .move-black-pawn-1 {
-    @include moveAnimation(
-      move-black-pawn-1,
-      499,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-black-pawn-1, 499, $animation-duration, $animation-fill-mode);
     @include animation-delay($black-pawn-1-animation-delay);
   }
 
   .move-black-queen {
-    @include moveAnimation(
-      move-black-queen,
-      499,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-black-queen, 499, $animation-duration, $animation-fill-mode);
     @include animation-delay($black-queen-animation-delay);
   }
 
   .box-red {
-    @include boxRedAnimation(
-      box-red,
-      499,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include boxRedAnimation(box-red, 499, $animation-duration, $animation-fill-mode);
     @include animation-delay($box-red-animation-delay);
   }
 }
@@ -165,52 +114,27 @@
   }
 
   .move-white-pawn-1 {
-    @include moveAnimation(
-      move-white-pawn-1,
-      380,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-white-pawn-1, 380, $animation-duration, $animation-fill-mode);
     @include animation-delay($white-pawn-1-animation-delay);
   }
 
   .move-white-pawn-2 {
-    @include moveAnimation(
-      move-white-pawn-2,
-      380,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-white-pawn-2, 380, $animation-duration, $animation-fill-mode);
     @include animation-delay($white-pawn-2-animation-delay);
   }
 
   .move-black-pawn-1 {
-    @include moveAnimation(
-      move-black-pawn-1,
-      380,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-black-pawn-1, 380, $animation-duration, $animation-fill-mode);
     @include animation-delay($black-pawn-1-animation-delay);
   }
 
   .move-black-queen {
-    @include moveAnimation(
-      move-black-queen,
-      380,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include moveAnimation(move-black-queen, 380, $animation-duration, $animation-fill-mode);
     @include animation-delay($black-queen-animation-delay);
   }
 
   .box-red {
-    @include boxRedAnimation(
-      box-red,
-      380,
-      $animation-duration,
-      $animation-fill-mode
-    );
+    @include boxRedAnimation(box-red, 380, $animation-duration, $animation-fill-mode);
     @include animation-delay($box-red-animation-delay);
   }
 }

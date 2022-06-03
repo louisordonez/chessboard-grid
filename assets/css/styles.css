@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -22,8 +21,7 @@ body {
   font-size: 16px;
   margin: 20px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
   border-radius: 50px;
   position: absolute;
   top: 0;
@@ -31,16 +29,14 @@ body {
 }
 
 .button:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .container {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .header-container {
@@ -70,7 +66,6 @@ body {
     bottom: 60px;
   }
 }
-
 @-webkit-keyframes moveWhitePawn2 {
   from {
     bottom: 0px;
@@ -79,7 +74,6 @@ body {
     bottom: 120px;
   }
 }
-
 @keyframes moveWhitePawn2 {
   from {
     bottom: 0px;
@@ -88,7 +82,6 @@ body {
     bottom: 120px;
   }
 }
-
 @-webkit-keyframes moveBlackPawn1 {
   from {
     top: 0px;
@@ -97,7 +90,6 @@ body {
     top: 120px;
   }
 }
-
 @keyframes moveBlackPawn1 {
   from {
     top: 0px;
@@ -106,7 +98,6 @@ body {
     top: 120px;
   }
 }
-
 @-webkit-keyframes moveBlackQueen {
   from {
     top: 0px;
@@ -117,7 +108,6 @@ body {
     left: 240px;
   }
 }
-
 @keyframes moveBlackQueen {
   from {
     top: 0px;
@@ -128,7 +118,6 @@ body {
     left: 240px;
   }
 }
-
 @-webkit-keyframes boxRed {
   from {
     top: 0px;
@@ -140,7 +129,6 @@ body {
     background: red;
   }
 }
-
 @keyframes boxRed {
   from {
     top: 0px;
@@ -152,7 +140,6 @@ body {
     background: red;
   }
 }
-
 @-webkit-keyframes moveWhitePawn1_499 {
   from {
     bottom: 0px;
@@ -161,7 +148,6 @@ body {
     bottom: 45px;
   }
 }
-
 @keyframes moveWhitePawn1_499 {
   from {
     bottom: 0px;
@@ -170,7 +156,6 @@ body {
     bottom: 45px;
   }
 }
-
 @-webkit-keyframes moveWhitePawn2_499 {
   from {
     bottom: 0px;
@@ -179,7 +164,6 @@ body {
     bottom: 88px;
   }
 }
-
 @keyframes moveWhitePawn2_499 {
   from {
     bottom: 0px;
@@ -188,7 +172,6 @@ body {
     bottom: 88px;
   }
 }
-
 @-webkit-keyframes moveBlackPawn1_499 {
   from {
     top: 0px;
@@ -197,7 +180,6 @@ body {
     top: 86px;
   }
 }
-
 @keyframes moveBlackPawn1_499 {
   from {
     top: 0px;
@@ -206,7 +188,6 @@ body {
     top: 86px;
   }
 }
-
 @-webkit-keyframes moveBlackQueen_499 {
   from {
     top: 0px;
@@ -217,7 +198,6 @@ body {
     left: 173px;
   }
 }
-
 @keyframes moveBlackQueen_499 {
   from {
     top: 0px;
@@ -228,7 +208,6 @@ body {
     left: 173px;
   }
 }
-
 @-webkit-keyframes boxRed_499 {
   from {
     top: 0px;
@@ -240,7 +219,6 @@ body {
     background: red;
   }
 }
-
 @keyframes boxRed_499 {
   from {
     top: 0px;
@@ -252,7 +230,6 @@ body {
     background: red;
   }
 }
-
 @-webkit-keyframes moveWhitePawn1_380 {
   from {
     bottom: 0px;
@@ -261,7 +238,6 @@ body {
     bottom: 32px;
   }
 }
-
 @keyframes moveWhitePawn1_380 {
   from {
     bottom: 0px;
@@ -270,7 +246,6 @@ body {
     bottom: 32px;
   }
 }
-
 @-webkit-keyframes moveWhitePawn2_380 {
   from {
     bottom: 0px;
@@ -279,7 +254,6 @@ body {
     bottom: 64px;
   }
 }
-
 @keyframes moveWhitePawn2_380 {
   from {
     bottom: 0px;
@@ -288,7 +262,6 @@ body {
     bottom: 64px;
   }
 }
-
 @-webkit-keyframes moveBlackPawn1_380 {
   from {
     top: 0px;
@@ -297,7 +270,6 @@ body {
     top: 64px;
   }
 }
-
 @keyframes moveBlackPawn1_380 {
   from {
     top: 0px;
@@ -306,7 +278,6 @@ body {
     top: 64px;
   }
 }
-
 @-webkit-keyframes moveBlackQueen_380 {
   from {
     top: 0px;
@@ -317,7 +288,6 @@ body {
     left: 128px;
   }
 }
-
 @keyframes moveBlackQueen_380 {
   from {
     top: 0px;
@@ -328,7 +298,6 @@ body {
     left: 128px;
   }
 }
-
 @-webkit-keyframes boxRed_380 {
   from {
     top: 0px;
@@ -340,7 +309,6 @@ body {
     background: red;
   }
 }
-
 @keyframes boxRed_380 {
   from {
     top: 0px;
@@ -352,18 +320,13 @@ body {
     background: red;
   }
 }
-
 .chessboard {
-  display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
-      grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
-  -ms-grid-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
-      grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
   background-color: white;
   border: 1px solid black;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .box {
@@ -435,14 +398,14 @@ body {
 
 @media screen and (max-width: 499px) {
   .chessboard {
-    -ms-grid-rows: 43px 43px 43px 43px 43px 43px 43px 43px;
-        grid-template-rows: 43px 43px 43px 43px 43px 43px 43px 43px;
-    -ms-grid-columns: 43px 43px 43px 43px 43px 43px 43px 43px;
-        grid-template-columns: 43px 43px 43px 43px 43px 43px 43px 43px;
+    grid-template-rows: 43px 43px 43px 43px 43px 43px 43px 43px;
+    grid-template-columns: 43px 43px 43px 43px 43px 43px 43px 43px;
   }
+
   .chess-piece {
     font-size: 33px;
   }
+
   .move-white-pawn-1 {
     position: relative;
     -webkit-animation: moveWhitePawn1_499 1s forwards;
@@ -450,6 +413,7 @@ body {
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
+
   .move-white-pawn-2 {
     position: relative;
     -webkit-animation: moveWhitePawn2_499 1s forwards;
@@ -457,6 +421,7 @@ body {
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
   }
+
   .move-black-pawn-1 {
     position: relative;
     -webkit-animation: moveBlackPawn1_499 1s forwards;
@@ -464,6 +429,7 @@ body {
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
   }
+
   .move-black-queen {
     position: relative;
     -webkit-animation: moveBlackQueen_499 1s forwards;
@@ -471,6 +437,7 @@ body {
     -webkit-animation-delay: 4s;
             animation-delay: 4s;
   }
+
   .box-red {
     -webkit-animation: boxRed_499 1s forwards;
             animation: boxRed_499 1s forwards;
@@ -478,20 +445,20 @@ body {
             animation-delay: 5s;
   }
 }
-
 @media screen and (max-width: 380px) {
   .header {
     font-size: 21px;
   }
+
   .chessboard {
-    -ms-grid-rows: 32px 32px 32px 32px 32px 32px 32px 32px;
-        grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px;
-    -ms-grid-columns: 32px 32px 32px 32px 32px 32px 32px 32px;
-        grid-template-columns: 32px 32px 32px 32px 32px 32px 32px 32px;
+    grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px;
+    grid-template-columns: 32px 32px 32px 32px 32px 32px 32px 32px;
   }
+
   .chess-piece {
     font-size: 25px;
   }
+
   .move-white-pawn-1 {
     position: relative;
     -webkit-animation: moveWhitePawn1_380 1s forwards;
@@ -499,6 +466,7 @@ body {
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
+
   .move-white-pawn-2 {
     position: relative;
     -webkit-animation: moveWhitePawn2_380 1s forwards;
@@ -506,6 +474,7 @@ body {
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
   }
+
   .move-black-pawn-1 {
     position: relative;
     -webkit-animation: moveBlackPawn1_380 1s forwards;
@@ -513,6 +482,7 @@ body {
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
   }
+
   .move-black-queen {
     position: relative;
     -webkit-animation: moveBlackQueen_380 1s forwards;
@@ -520,11 +490,11 @@ body {
     -webkit-animation-delay: 4s;
             animation-delay: 4s;
   }
+
   .box-red {
     -webkit-animation: boxRed_380 1s forwards;
             animation: boxRed_380 1s forwards;
     -webkit-animation-delay: 5s;
             animation-delay: 5s;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
